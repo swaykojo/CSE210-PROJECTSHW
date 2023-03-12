@@ -4,15 +4,14 @@ class Program
 {
     static void Main(string[] args)
     {
-        Person person = new Person(); 
-        person._givenName = "Godsway";
-        person._familyName = "Awuah";
-        person.ShowWesternName();
-        person.ShowEasternName(); 
+       // This will start by displaying "AAA" and waiting for the user to press the enter key
+     Console.WriteLine("AAA");
+     Console.ReadLine();
 
-        Person person1 = new Person(); 
-        person1._givenName = "Emma";
-        person1._familyName = "Smith"; 
-        person1.ShowWesternName();
+      // This will clear the console
+      Console.Clear();
+
+      // This will show "BBB" in the console where "AAA" used to be
+      Console.WriteLine("BBB"); 
     }
 }
