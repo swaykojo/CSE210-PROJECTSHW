@@ -4,14 +4,55 @@ class Program
 {
     static void Main(string[] args)
     {
-       // This will start by displaying "AAA" and waiting for the user to press the enter key
-     Console.WriteLine("AAA");
-     Console.ReadLine();
+       
+       Console.Write("Breath in......");
 
-      // This will clear the console
-      Console.Clear();
 
-      // This will show "BBB" in the console where "AAA" used to be
-      Console.WriteLine("BBB"); 
+
+       for(int i = 5; i > 0; i--) 
+       {
+        Console.Write(i);
+        Thread.Sleep(1000);
+        Console.Write("\b \b");
+       }
+    /*  
+    List<string> animationDesign = new List<string>();
+       animationDesign.Add("|");
+       animationDesign.Add("/");
+       animationDesign.Add("-");
+       animationDesign.Add("\\");
+       animationDesign.Add("|");
+       animationDesign.Add("/");
+       animationDesign.Add("-");
+       animationDesign.Add("\\");
+
+  //     foreach(string design in animationDesign)
+   //    {
+     //     Console.Write(design); 
+       //   Thread.Sleep(1000);
+     //     Console.Write("\b \b");
+
+      // }
+        DateTime startTime = DateTime.Now;
+        DateTime endTime = startTime.AddSeconds(10); 
+
+        int i = 0;
+
+        while (DateTime.Now < endTime)
+        {
+           string design = animationDesign[i];
+            Console.Write(design); 
+            Thread.Sleep(1000);
+            Console.Write("\b \b");   
+
+            i++;
+
+            if (i >= animationDesign.Count)   
+            {
+                i = 0;
+            }     
+        } */
+      
+
     }
 }
