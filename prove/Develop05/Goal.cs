@@ -62,7 +62,8 @@ public abstract class Goal
     public void DisplayGetGoalPoints()
     {
         Console.Write("what is the amount of points associated with this goal? ");
-        _goalPoints = int.Parse(Console.ReadLine());
+          _goalPoints = int.Parse(Console.ReadLine());
+        
     }
 
     public abstract string ToCSVRecord();

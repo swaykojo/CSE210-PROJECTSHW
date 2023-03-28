@@ -40,17 +40,28 @@ class Program
                 goal.DisplayGetGoalDescription();
                 goal.DisplayGetGoalPoints();
 
+                if (goal != null)
+            {
+                allGoals.addGoal(goal);
+            }
+
             }
 
             else if(userNewGoalMenu == 3) 
-            {
+            { 
+                CheckListGoal check = new CheckListGoal();
                 goal = new CheckListGoal();
                 goal.DisplayGetGoalName();
                 goal.DisplayGetGoalDescription();
                 goal.DisplayGetGoalPoints();
-                CheckListGoal check = new CheckListGoal();
                 check.DisplayGetGoalTimes();
                 check.DisplayGetGoalBonus();
+
+                if (goal != null)
+            {
+                allGoals.addGoal(goal);
+            }
+
             }
             
          } 
